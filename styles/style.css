@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --color-primario: #F3F5FC;
+    --color-secundario: #0A3871;
+    --color-terciario: #D8DFE8;
+    --color-mensaje-primario: #343A40;
+    --color-mensaje-secundario: #495057;
+
+    --fuente-inter: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--color-primario);
+}
+
+.principal{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.principal__contenido {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.principal__contenido__texto {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 32px;
+    padding: 10px;
+    font-family: var(--fuente-inter);
+    height: 350px;
+}
+
+.principal__contenido__alerta {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 12px;
+    color: var(--color-mensaje-secundario);
+    font-family: var(--fuente-inter);
+}
+
+.principal__contenido__alerta svg {
+    margin-right: 8px;
+    color: black;
+}
+
+.principal__contenido__botones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 32px;
+}
+
+.principal__texto__encriptado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 32px;
+    margin-left: 10px;
+    background-color: white;
+    padding: 20px;
+    max-width: 300px;
+    height: 500px;
+    font-family: var(--fuente-inter);
+}
+
+.principal__imagen {
+    max-width: 100%;
+    height: auto;
+}
+
+.botones {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    width: 300px;
+    font-family: var(--fuente-inter);
+}
+
+.boton__primario {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+}
+
+.boton__secundario {
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+}
+
+.footer {
+    color: var(--color-secundario);
+    text-align: center;
+}
+
+#copiar {
+    position: relative;
+    margin-top: 320px;
+    bottom: 10px;
+    align-self: center;
+}
+
+.texto__procesado {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.boton__primario:hover {
+    background-color: green;
+}
+.boton__secundario:hover {
+    background-color: pink;
+}

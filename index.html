@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/Logo.png" alt="Logo-alura" >
+    </header>
+    <main class="principal">
+        <section class="principal__contenido">
+            <textarea id="textoUsuario" class="principal__contenido__texto" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="principal__contenido__alerta">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20">
+                    <path fill="currentColor" d="M2.93 17.07A10 10 0 1 1 17.07 2.93A10 10 0 0 1 2.93 17.07M9 5v6h2V5zm0 8v2h2v-2z"/>
+                </svg>
+                <span>Solo letras minúsculas y sin acento</span>
+            </div>
+            <div class="principal__contenido__botones">
+                <button onclick="encriptarTexto();" class="botones boton__primario">Encriptar</button>
+                <button onclick="desencriptarTexto();" class="botones boton__secundario" id="reiniciar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="principal__texto__encriptado">
+            <img class="principal__imagen" src="./assets/Muñeco.png" alt="Muñeco">
+            <h2>Ningún mensaje fue encontrado</h2>
+            <p>Ingresa el texto que desea encriptar o desencriptar.</p>
+            <!--<button class="botones boton__secundario oculto" id="copiar" onclick="copiarTexto()">Copiar</button>-->
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Andrés Miranda &copy; <span id="year"></span> </p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
